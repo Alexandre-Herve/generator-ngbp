@@ -12,7 +12,7 @@
       "grunt-contrib-concat": "^0.3.0",
       "grunt-contrib-watch": "^0.6.1",
       "grunt-contrib-coffee": "^0.10.1",
-      "grunt-contrib-less": "~0.11.0",
+      "grunt-libsass": "^0.2.0",
       "grunt-coffeelint": "0.0.10",
       "grunt-html2js": "^0.2.4",
       "grunt-ng-annotate": "^0.3.2",

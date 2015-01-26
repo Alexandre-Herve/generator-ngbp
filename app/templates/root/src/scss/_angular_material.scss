@@ -2,86 +2,79 @@
  * core angular material scss
  */
 
-@import '../../../vendor/angular-material-source/src/core/style/layout';
-@import '../../../vendor/angular-material-source/src/core/style/mixins';
-@import '../../../vendor/angular-material-source/src/core/style/structure';
-@import '../../../vendor/angular-material-source/src/core/style/variables';
+@import '../../vendor/angular-material-source/src/core/style/variables';
+@import '../../vendor/angular-material-source/src/core/style/layout';
+@import '../../vendor/angular-material-source/src/core/style/mixins';
+@import '../../vendor/angular-material-source/src/core/style/structure';
 
 /*
- *  components
+ components
  */
 
-@import '../../../vendor/angular-material-source/src/components/backdrop/backdrop';
-@import '../../../vendor/angular-material-source/src/components/backdrop/backdrop-theme';
+@import '../../vendor/angular-material-source/src/components/backdrop/backdrop';
+@import '../../vendor/angular-material-source/src/components/backdrop/backdrop-theme';
 
-@import '../../../vendor/angular-material-source/src/components/bottomSheet/bottomSheet';
-@import '../../../vendor/angular-material-source/src/components/bottomSheet/bottomSheet-theme';
+@import '../../vendor/angular-material-source/src/components/bottomSheet/bottomSheet';
+@import '../../vendor/angular-material-source/src/components/bottomSheet/bottomSheet-theme';
 
-@import '../../../vendor/angular-material-source/src/components/button/button';
-@import '../../../vendor/angular-material-source/src/components/button/button-theme';
+@import '../../vendor/angular-material-source/src/components/button/button';
+@import '../../vendor/angular-material-source/src/components/button/button-theme';
 
-@import '../../../vendor/angular-material-source/src/components/card/card';
-@import '../../../vendor/angular-material-source/src/components/card/card-theme';
+@import '../../vendor/angular-material-source/src/components/card/card';
+@import '../../vendor/angular-material-source/src/components/card/card-theme';
 
-@import '../../../vendor/angular-material-source/src/components/checkbox/checkbox';
-@import '../../../vendor/angular-material-source/src/components/checkbox/checkbox-theme';
+@import '../../vendor/angular-material-source/src/components/checkbox/checkbox';
+@import '../../vendor/angular-material-source/src/components/checkbox/checkbox-theme';
 
-@import '../../../vendor/angular-material-source/src/components/content/content';
-@import '../../../vendor/angular-material-source/src/components/content/content-theme';
+@import '../../vendor/angular-material-source/src/components/content/content';
+@import '../../vendor/angular-material-source/src/components/content/content-theme';
 
-@import '../../../vendor/angular-material-source/src/components/dialog/dialog';
-@import '../../../vendor/angular-material-source/src/components/dialog/dialog-theme';
+@import '../../vendor/angular-material-source/src/components/dialog/dialog';
+@import '../../vendor/angular-material-source/src/components/dialog/dialog-theme';
 
-@import '../../../vendor/angular-material-source/src/components/divider/divider';
-@import '../../../vendor/angular-material-source/src/components/divider/divider-theme';
+@import '../../vendor/angular-material-source/src/components/divider/divider';
+@import '../../vendor/angular-material-source/src/components/divider/divider-theme';
 
-@import '../../../vendor/angular-material-source/src/components/icon/icon';
-@import '../../../vendor/angular-material-source/src/components/icon/icon-theme';
+@import '../../vendor/angular-material-source/src/components/icon/icon';
 
-@import '../../../vendor/angular-material-source/src/components/input/input';
-@import '../../../vendor/angular-material-source/src/components/input/input-theme';
+@import '../../vendor/angular-material-source/src/components/input/input';
+@import '../../vendor/angular-material-source/src/components/input/input-theme';
 
-@import '../../../vendor/angular-material-source/src/components/list/list';
-@import '../../../vendor/angular-material-source/src/components/list/list-theme';
+@import '../../vendor/angular-material-source/src/components/list/list';
 
-@import '../../../vendor/angular-material-source/src/components/progressCircular/progressCircular';
-@import '../../../vendor/angular-material-source/src/components/progressCircular/progressCircular-theme';
+@import '../../vendor/angular-material-source/src/components/progressCircular/progressCircular';
+@import '../../vendor/angular-material-source/src/components/progressCircular/progressCircular-theme';
 
-@import '../../../vendor/angular-material-source/src/components/progressLinear/progressLinear';
-@import '../../../vendor/angular-material-source/src/components/progressLinear/progressLinear-theme';
+@import '../../vendor/angular-material-source/src/components/progressLinear/progressLinear';
+@import '../../vendor/angular-material-source/src/components/progressLinear/progressLinear-theme';
 
-@import '../../../vendor/angular-material-source/src/components/radioButton/radioButton';
-@import '../../../vendor/angular-material-source/src/components/radioButton/radioButton-theme';
+@import '../../vendor/angular-material-source/src/components/radioButton/radio-button';
+@import '../../vendor/angular-material-source/src/components/radioButton/radio-button-theme';
 
-@import '../../../vendor/angular-material-source/src/components/sidenav/sidenav';
-@import '../../../vendor/angular-material-source/src/components/sidenav/sidenav-theme';
+@import '../../vendor/angular-material-source/src/components/sidenav/sidenav';
+@import '../../vendor/angular-material-source/src/components/sidenav/sidenav-theme';
 
-@import '../../../vendor/angular-material-source/src/components/slider/slider';
-@import '../../../vendor/angular-material-source/src/components/slider/slider-theme';
+@import '../../vendor/angular-material-source/src/components/slider/slider';
+@import '../../vendor/angular-material-source/src/components/slider/slider-theme';
 
-@import '../../../vendor/angular-material-source/src/components/sticky/sticky';
-@import '../../../vendor/angular-material-source/src/components/sticky/sticky-theme';
+@import '../../vendor/angular-material-source/src/components/sticky/sticky';
 
-@import '../../../vendor/angular-material-source/src/components/subheader/subheader';
-@import '../../../vendor/angular-material-source/src/components/subheader/subheader-theme';
+@import '../../vendor/angular-material-source/src/components/subheader/subheader';
+@import '../../vendor/angular-material-source/src/components/subheader/subheader-theme';
 
-@import '../../../vendor/angular-material-source/src/components/swipe/swipe';
-@import '../../../vendor/angular-material-source/src/components/swipe/swipe-theme';
+@import '../../vendor/angular-material-source/src/components/switch/switch';
+@import '../../vendor/angular-material-source/src/components/switch/switch-theme';
 
-@import '../../../vendor/angular-material-source/src/components/switch/switch';
-@import '../../../vendor/angular-material-source/src/components/switch/switch-theme';
+@import '../../vendor/angular-material-source/src/components/tabs/tabs';
+@import '../../vendor/angular-material-source/src/components/tabs/tabs-theme';
 
-@import '../../../vendor/angular-material-source/src/components/tabs/tabs';
-@import '../../../vendor/angular-material-source/src/components/tabs/tabs-theme';
+@import '../../vendor/angular-material-source/src/components/textField/textField';
+@import '../../vendor/angular-material-source/src/components/textField/textField-theme';
 
-@import '../../../vendor/angular-material-source/src/components/textFields/textFields';
-@import '../../../vendor/angular-material-source/src/components/textFields/textFields-theme';
+@import '../../vendor/angular-material-source/src/components/toast/toast';
+@import '../../vendor/angular-material-source/src/components/toast/toast-theme';
 
-@import '../../../vendor/angular-material-source/src/components/toast/toast';
-@import '../../../vendor/angular-material-source/src/components/toast/toast-theme';
+@import '../../vendor/angular-material-source/src/components/toolbar/toolbar';
+@import '../../vendor/angular-material-source/src/components/toolbar/toolbar-theme';
 
-@import '../../../vendor/angular-material-source/src/components/toolbar/toolbar';
-@import '../../../vendor/angular-material-source/src/components/toolbar/toolbar-theme';
-
-@import '../../../vendor/angular-material-source/src/components/whiteframe/whiteframe';
-@import '../../../vendor/angular-material-source/src/components/whiteframe/whiteframe-theme';
+@import '../../vendor/angular-material-source/src/components/whiteframe/whiteframe';
