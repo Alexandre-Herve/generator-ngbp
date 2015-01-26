@@ -59,12 +59,6 @@ var NgbpGenerator = yeoman.generators.Base.extend({
                 message: 'Would you like to use Coffeescript?',
                 default: false
             },
-            {
-                type: 'confirm',
-                name: 'includeAngularResource',
-                message: 'Do you want to include angular-resource, helpful for calling RESTful apis?',
-                default: true
-            },
         ];
 
         this.prompt(prompts, function (props) {

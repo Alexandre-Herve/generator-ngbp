@@ -5,19 +5,8 @@
  */
 
 
-/**
- * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
- * project should be imported as the rest are just wasting space.
- */
+@import 'angular-material';
 
-@import '../../vendor/bootstrap/less/bootstrap.less';
-
-/**
- * This is our main variables file. We must include it last so we can overwrite any variable
- * definitions in our imported stylesheets.
- */
-
-@import 'variables.less';
 
 
 /**
@@ -39,5 +28,4 @@
  * TODO: In a later version of this boilerplate, I'd like to automate this.
  */
 
-@import '../app/home/home.less';
 

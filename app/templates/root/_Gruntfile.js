@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-coffee');
-    grunt.loadNpmTasks('grunt-contrib-less');
+    grung.loadNpmTasks('grunt-libsass');
     grunt.loadNpmTasks('grunt-coffeelint');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-ng-annotate');
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
          * build tasks. 'js' is all project javascript, except tests.
          * 'commonTemplates' contains our reusable components' ('src/common')
          * template HTML files, while 'appTemplates' contains the templates for
-         * our app's code. 'html' is just our main HTML file. 'less' is our main
+         * our app's code. 'html' is just our main HTML file. 'scss' is our main
          * stylesheet, and 'unit' contains our app's unit tests.
          */
         app_files: {
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
             commonTemplates: [ 'src/common/**/*.tpl.html' ],
 
             html: [ 'src/index.html' ],
-            less: 'src/less/main.less'
+            scss: 'src/scss/main.scss'
         },
 
         /**
@@ -76,12 +76,18 @@ module.exports = function(grunt) {
          */
         vendor_files: {
             js: [
+                'vendor/jquery/dist/jquery.js',
                 'vendor/angular/angular.js',
-                <% if (includeAngularResource) {%>'vendor/angular-resource/angular-resource.js',<% } %>
-                'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
                 'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
                 'vendor/angular-ui-router/release/angular-ui-router.js',
-                'vendor/angular-ui-utils/modules/route/route.js'
+                'vendor/angular-ui-utils/modules/route/route.js',
+                'vendor/angular-animate/angular-animate.js',
+                'vendor/angular-aria/angular-aria.js',
+                'vendor/angular-material/angular-material.js',
+                'vendor/angular-mocks/angular-mocks.js',
+                'vendor/lodash/dist/lodash.js',
+                'vendor/restangular/restangular.js'
+
             ],
             css: [
             ],
@@ -260,19 +266,19 @@ module.exports = function(grunt) {
         },
 
         /**
-         * `grunt-contrib-less` handles our LESS compilation and uglification automatically.
-         * Only our 'main.less' file is included in compilation; all other files
+         * `grunt-libsass` handles our SCSS compilation and uglification automatically.
+         * Only our 'main.scss' file is included in compilation; all other files
          * must be imported from this file.
          */
-        less: {
+        libsass: {
             build: {
                 files: {
-                    '<%%= build_dir %>/assets/<%%= pkg.name %>-<%%= pkg.version %>.css': '<%%= app_files.less %>'
+                    '<%%= build_dir %>/assets/<%%= pkg.name %>-<%%= pkg.version %>.css': '<%%= app_files.scss %>'
                 }
             },
             compile: {
                 files: {
-                    '<%%= build_dir %>/assets/<%%= pkg.name %>-<%%= pkg.version %>.css': '<%%= app_files.less %>'
+                    '<%%= build_dir %>/assets/<%%= pkg.name %>-<%%= pkg.version %>.css': '<%%= app_files.scss %>'
                 },
                 options: {
                     cleancss: true,
@@ -287,7 +293,7 @@ module.exports = function(grunt) {
          * are linted based on the policies listed in 'options'. But we can also
          * specify exclusionary patterns by prefixing them with an exclamation
          * point (!); this is useful when code comes from a third party but is
-         * nonetheless inside 'src/'.
+         * nonethescss inside 'src/'.
          */
         jshint: {
             src: [
@@ -526,9 +532,9 @@ module.exports = function(grunt) {
             /**
              * When the CSS files change, we need to compile and minify them.
              */
-            less: {
-                files: [ 'src/**/*.less' ],
-                tasks: [ 'less:build' ]
+            scss: {
+                files: [ 'src/**/*.scss' ],
+                tasks: [ 'libsass:build' ]
             },
 
             /**
@@ -579,7 +585,7 @@ module.exports = function(grunt) {
 
     // The 'build' task gets your app ready to run for development and testing.
     grunt.registerTask('build', [
-        'clean', 'html2js', 'jshint', 'coffeelint', 'coffee', 'less:build',
+        'clean', 'html2js', 'jshint', 'coffeelint', 'coffee', 'libsass:build',
         'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
         'copy:build_appjs', 'copy:build_vendorjs', 'ngAnnotate:build', 'index:build', 'karmaconfig',
         'karma:continuous'
@@ -588,7 +594,7 @@ module.exports = function(grunt) {
     // The 'compile' task gets your app ready for deployment by concatenating and minifying your code.
     // Note - compile builds off of the build dir (look at concat:compile_js), so run grunt build before grunt compile
     grunt.registerTask('compile', [
-        'less:compile', 'copy:compile_assets', 'concat:compile_js', 'uglify', 'index:compile'
+        'libsass:compile', 'copy:compile_assets', 'concat:compile_js', 'uglify', 'index:compile'
     ]);
 
     // A utility function to get all app JavaScript sources.
