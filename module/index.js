@@ -52,8 +52,8 @@ var ModuleGenerator = yeoman.generators.NamedBase.extend({
             this.template('_module.js', path.join(modulePath, this.camelModuleName + '.js'));
             this.template('_moduleSpec.js', path.join(modulePath, this.camelModuleName + '.spec.js'));
         }
-        this.template('_moduleHtml.tpl.html', path.join(modulePath, this.camelModuleName + '.tpl.html'));
-        this.template('_module.less', path.join(modulePath, this.camelModuleName + '.less'));
+        this.template('_module.jade', path.join(modulePath, this.camelModuleName + '.jade'));
+        this.template('_module.scss', path.join(modulePath, this.camelModuleName + '.scss'));
 
         this._addModuleToAppJs(this.projectName, this.camelModuleName, this.lowerModuleName);
 
@@ -63,8 +63,8 @@ var ModuleGenerator = yeoman.generators.NamedBase.extend({
     },
 
     touchIndexHtml: function() {
-        // Touch the index.html file to force the index grunt task to rebuild it (that task adds the new module to the scripts)
-        var indexHtmlFilePath = 'src/index.html';
+        // Touch the index.jade file to force the index grunt task to rebuild it (that task adds the new module to the scripts)
+        var indexHtmlFilePath = 'src/index.jade';
         touch(indexHtmlFilePath, {mtime: true});
     },
 

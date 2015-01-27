@@ -1,9 +1,10 @@
 {
-  "name": "generator-angular-material",
+  "name": "generator-ngbp-material",
   "version": "0.1.2",
   "description": "Yeoman generator based on angular-material and the ngBoilerplate kickstarter, a best-practice boilerplate for scalable Angular projects built on a highly modular, folder-by-feature structure.",
   "keywords": [
     "yeoman-generator",
+    "jade",
     "angular-material",
     "angular",
     "angularjs",
@@ -14,18 +15,18 @@
     "framework",
     "module",
     "client",
-    "grunt",
+    "gulp",
     "karma",
     "express",
     "app"
   ],
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "thardy/generator-ngbp",
+  "repository": "Alexandre-herve/generator-ngbp-material",
   "author": {
-    "name": "Tim Hardy",
-    "email": "",
-    "url": "https://github.com/thardy"
+    "name": "Alexandre Hervé",
+    "email": "alexandre.herve9@gmail.com",
+    "url": ""
   },
   "engines": {
     "node": ">=0.10.0"

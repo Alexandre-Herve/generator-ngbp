@@ -5,7 +5,7 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 
 
-var NgbpGenerator = yeoman.generators.Base.extend({
+var NgbpMaterialGenerator = yeoman.generators.Base.extend({
     init: function () {
         this.pkg = require('../package.json');
 
@@ -57,7 +57,7 @@ var NgbpGenerator = yeoman.generators.Base.extend({
                 type: 'confirm',
                 name: 'useCoffeescript',
                 message: 'Would you like to use Coffeescript?',
-                default: false
+                default: true
             },
         ];
 
@@ -65,7 +65,6 @@ var NgbpGenerator = yeoman.generators.Base.extend({
             this.projectName = props.projectName;
             this.author = props.author;
             this.useCoffeescript = props.useCoffeescript;
-            this.includeAngularResource = props.includeAngularResource;
 
             done();
         }.bind(this));
@@ -115,4 +114,4 @@ var NgbpGenerator = yeoman.generators.Base.extend({
 
 });
 
-module.exports = NgbpGenerator;
+module.exports = NgbpMaterialGenerator;

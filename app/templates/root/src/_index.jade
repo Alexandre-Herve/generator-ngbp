@@ -1,0 +1,25 @@
+doctype html
+html(lang="en", ng-app="angularNgbpMaterial")
+  head
+    title= pageTitle
+
+    // inject:css 
+    // Note that inject and endinject must be surrounded by a space on both sides
+    // endinject 
+
+    // inject:js 
+    // Note that inject and endinject must be surrounded by a space on both sides
+    // endinject 
+
+  body(ng-controller="AppController", ng-cloak)
+
+    div(layout="column", layout-fill)
+      md-toolbar.md-primary
+        .md-toolbar-tools
+          | my title lol
+          span( flex )
+          md-button
+            | look ! a button !
+
+
+

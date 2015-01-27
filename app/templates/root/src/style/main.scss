@@ -5,7 +5,7 @@
  */
 
 
-@import 'angular_material';
+//@import 'angular_material';
 
 
 
@@ -19,13 +19,4 @@
   font-weight: 400;
   src: local('Roboto Regular'), local('Roboto-Regular'), url(fonts/Roboto-Regular.woff) format('woff');
 }
-
-
-/**
- * Now that all app-wide styles have been applied, we can load the styles for
- * all the submodules and components we are using. 
- *
- * TODO: In a later version of this boilerplate, I'd like to automate this.
- */
-
 
