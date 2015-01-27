@@ -1,13 +1,13 @@
-# generator-ngbp
+# generator-ngbp-material
 
-> Yeoman Generator based on the popular ngBoilerplate AngularJS kickstarter.  ngBoilerplate is a best-practice boilerplate for scalable Angular projects built on a highly modular, folder-by-feature structure.  You work in vertical slices on a daily basis (view, controller, service, etc), so why not organize your projects to optimize your workflow, maximize discoverability, and get copy-paste module reuse for free?
+> Yeoman Generator based on angular-material and the popular ngBoilerplate AngularJS kickstarter. ngBoilerplate is a best-practice boilerplate for scalable Angular projects built on a highly modular, folder-by-feature structure.  You work in vertical slices on a daily basis (view, controller, service, etc), so why not organize your projects to optimize your workflow, maximize discoverability, and get copy-paste module reuse for free?
 
 ## Quick Start
 
 Install generator-ngbp from npm, run:
 
 ```
-$ npm install -g generator-ngbp
+$ npm install -g generator-ngbp-angular
 ```
 
 Create a new directory for your project and cd into it:
@@ -20,7 +20,7 @@ $ cd my-new-project
 Initiate the generator:
 
 ```
-$ yo ngbp
+$ yo ngbp-material
 ```
 
 ### Sub-Generators
@@ -31,7 +31,7 @@ There's only one subgenerator at the moment
 To create a new module...
 
 ```
-$ yo ngbp:module "moduleName"
+$ yo ngbp-material:module "moduleName"
 ```
 
 You can specify the root folder of the module via prompt - default is "app".

@@ -25,11 +25,11 @@ var NgbpMaterialGenerator = yeoman.generators.Base.extend({
             //this.spawnCommand('grunt', ['build']);
             this.log(chalk.green(
                 '\nYou\'re good to go!!!!\n' +
-                'Simply running ') + chalk.cyan.bold("grunt watch") + chalk.green(' will do the following:\n' +
+                'Simply running ') + chalk.cyan.bold("gulp") + chalk.green(' will do the following:\n' +
                 ' - Build everything (concat, create js templates of html, etc) and place it into a "build" folder\n' +
                 ' - Run all your tests\n' +
                 ' - Watch your files for changes to do the above without any intervention\n' +
-                ' - Launch express server to host your app at http://localhost:9000/index.html\n' +
+                ' - Launch express server to host your app at http://localhost:8080/index.html\n' +
                 ' - Setup LiveReload so you immediately see changes in your browser (you still have to enable LiveReload on your browser)\n'));
         });
     },
