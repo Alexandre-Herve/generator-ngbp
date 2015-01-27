@@ -1,6 +1,6 @@
 {
   "name": "generator-ngbp-material",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "description": "Yeoman generator based on angular-material and the ngBoilerplate kickstarter, a best-practice boilerplate for scalable Angular projects built on a highly modular, folder-by-feature structure.",
   "keywords": [
     "yeoman-generator",
@@ -22,7 +22,14 @@
   ],
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "Alexandre-herve/generator-ngbp-material",
+  "bugs": {
+    "url": "https://github.com/Alexandre-Herve/generator-ngbp-material/issues",
+    "email": "alexandre.herve9@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/Alexandre-Herve/generator-ngbp-material",
+    "type": "git"
+  },
   "author": {
     "name": "Alexandre Hervé",
     "email": "alexandre.herve9@gmail.com",
