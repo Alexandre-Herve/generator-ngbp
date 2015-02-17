@@ -7,7 +7,7 @@
 Install generator-ngbp from npm, run:
 
 ```
-$ npm install -g generator-ngbp-angular
+$ npm install -g generator-ngbp-material
 ```
 
 Create a new directory for your project and cd into it:
